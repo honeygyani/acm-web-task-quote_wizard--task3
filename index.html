@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quote Wizard</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 style="color:yellow">Quote Wizard</h1>
+  </header>
+
+  <section id="quote-section">
+    <div id="quote-container">
+      <h2>Random Fun Quote</h2>
+	<blockquote id="quote">Loding...</blockquote>
+      <p id="quote"></p>
+      <button id="new-quote-btn" onclick="getquote(api_url)">Get New Quote</button>
+    </div>
+  </section>
+
+ <script> 
+const quote=document.getElementById("quote");
+api_url="https://api.quotable.io/random";
+async function getquote(url){
+const response=await fetch(url);
+var data=await response.json();
+quote.innerHTML=data.content;}
+getquote(api_url);
+</script>
+</body>
+</html>

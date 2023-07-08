@@ -1,0 +1,54 @@
+body {
+    background-image:url("b1.jpg") ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #quote-section {
+    text-align: center;
+  }
+  
+  #quote-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  h1, h2 {
+    margin: 0;
+    font-weight: normal;
+  }
+  
+  #quote {
+    margin: 20px 0;
+  }
+  
+  #new-quote-btn {
+    background-color: #ad5389;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  #new-quote-btn:hover {
+    background-color: #3c1053;
+  }
+  
